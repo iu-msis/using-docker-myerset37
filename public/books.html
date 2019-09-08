@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- From Bootstrap -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/site.css" rel="stylesheet" >
+    <!-- From Bootstrap -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>books</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Bob's Books</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="books.html">Books<span class="sr-only">(current)</span></a>
+          </li>
+        </ul> <!-- makes the next part go to the left by leaving it out of the list -->
+          <!-- <li class="nav-item dropdown"> ## removed to get rid of weird dot-->
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Hello, Bob!
+              <img src="img/Bob_at_Easel.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="profile.html">My Profile</a>
+            </div>
+          <!-- </li> -->
+      </div>
+    </nav>
+    <main id="btable">
+      <p>
+        <h2>
+          Bob's Heavenly Book List
+        </h2>
+      </p>
+      <p>
+      <!-- Table recipe from Bootstrap -->
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Author(s)</th>
+            <th scope="col">Year Published</th>
+            <th scope="col">Publisher</th>
+            <th scope="col">Page Count</th>
+            <th scope="col">MSRP</th>
+          </tr>
+        </thead>
+        <!-- Books found on Amazon.com -->
+        <tbody>
+          <tr>
+            <th scope="row" class="btitle">Compendium of Acrylic Painting Techniques</th>
+            <td>Gill Barron</td>
+            <td>2014</td>
+            <td>Search Press</td>
+            <td>176</td>
+            <td>$19.95</td>
+          </tr>
+          <tr>
+            <th scope="row" class="btitle">Landscape Painting: Essential Concepts and Techniques for Plein Air and Studio Practice</th>
+            <td>Mitchell Albala</td>
+            <td>2009</td>
+            <td>Watson-Guptill</td>
+            <td>192</td>
+            <td>$35.00</td>
+          </tr>
+          <tr>
+            <th scope="row" class="btitle">Landscape Painting Now: From Pop Abstraction to New Romanticism</th>
+            <td>Barry Schwabsky</td>
+            <td>2019</td>
+            <td>D.A.P.</td>
+            <td>368</td>
+            <td>$34.43</td>
+          </tr>
+          <tr>
+            <th scope="row" class="btitle">Happy Little Accidents: The Wit & Wisdom of Bob Ross</th>
+            <td>Bob Ross</td>
+            <td>2017</td>
+            <td>Running Press Adult</td>
+            <td>128</td>
+            <td>$15.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+      <h3>Add Another Book </h3>
+      </p>
+      <form>
+        <div class="form-row align-items-center">
+          <div class="col-auto">
+            <label class="sr-only" for="inlineFormInput">Title</label>
+            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Title">
+          </div>
+          <div class="col-auto">
+            <label class="sr-only" for="inlineFormInput">Author(s)</label>
+            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Author(s)">
+          </div>
+          <div class="col-auto">
+            <label class="sr-only" for="inlineFormInput">Year Published</label>
+            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Year Published">
+          </div>
+          <div class="col-auto">
+            <label class="sr-only" for="inlineFormInput">Publisher</label>
+            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Publisher">
+          </div>
+          <div class="col-auto">
+            <label class="sr-only" for="inlineFormInput">Page Count</label>
+            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Page Count">
+          </div>
+          <div class="col-auto">
+            <label class="sr-only" for="inlineFormInput">MSRP</label>
+            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="MSRP">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-2">Add Book</button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

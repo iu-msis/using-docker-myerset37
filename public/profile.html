@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- From Bootstrap -->
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/site.css" rel="stylesheet" >
     <!-- From Bootstrap -->
@@ -14,7 +15,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <title>home</title>
+    <title>profile</title>
   </head>
   <body>
     <header>
@@ -26,8 +27,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="books.html">Books</a>
@@ -44,28 +45,23 @@
           <!-- </li> -->
       </div>
     </nav>
+        <h2>My Profile</h2>
     <main>
-      <p><h2>Home</h2></p>
-      <div class="media">
-        <a href="img/S1E1.png" >
-          <img class="align-self-start mr-3" src="img/S1E1.png" width="50" height="50" alt="A Walk in the Woods">
-        </a>
-        <div class="media-body">
-          <h5 class="mt-0">My first painting on-air</h5>
-          <p>This is the first painting I ever did on TV. Doesn't it just remind you of a nice, peaceful walk in the woods?</p>
-          <p>As seen on "The Joy of Painting", Season 1 - Episode 1. Image courtesy of <a href="https://www.twoinchbrush.com/painting/a-walk-in-the-woods" id="source">https://www.twoinchbrush.com/painting/a-walk-in-the-woods</a></p>
-        </div>
-      </div>
-      <div class="media">
-        <a href="img/S31E13.png" >
-          <img class="align-self-start mr-3" src="img/S31E13.png" width="50" height="50" alt="Wilderness Day">
-        </a>
-        <div class="media-body">
-          <h5 class="mt-0">Latest Work</h5>
-          <p>This is my most recent work from my show. Check out the video <a href="https://youtu.be/nJGCVFn57U8" id="source">here!</a></p>
-          <p>As seen on "The Joy of Painting", Season 31 - Episode 13. Image courtesy of <a href="https://www.twoinchbrush.com/painting/wilderness-day" id="source">https://www.twoinchbrush.com/painting/wilderness-day</a></p>
-        </div>
+      <!-- from W3Schools template -->
+      <!-- https://www.w3schools.com/howto/howto_css_profile_card.asp -->
+      <div class="card">
+        <img src="img/Bob_at_Easel.jpg" alt="Bob" style="width:100%">
+        <h1>Bob Ross</h1>
+        <p class="profile_title">Daytona Beach, FL, USA</p>
+        <p>10/29/1942</p>
+        <p><a href="https://en.wikipedia.org/wiki/Bob_Ross#/media/File:Bob_at_Easel.jpg">Image Source</a></p>
+        <a href="#"><i class="fa fa-dribbble"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <p><a href="mailto:thebobross@fakeemail.com" id="contact">Email at TheBobRoss@FakeEmail.com</a></p>
       </div>
     </main>
+    <footer
   </body>
 </html>
