@@ -42,7 +42,7 @@
           <!-- </li> -->
       </div>
     </nav>
-    <main id="btable">
+    <main>
       <p>
         <h2>
           Bob's Heavenly Book List
@@ -50,15 +50,15 @@
       </p>
       <p>
       <!-- Table recipe from Bootstrap -->
-      <table class="table table-hover">
+      <table id="btable" class="table table-hover">
         <thead>
           <tr>
-            <th scope="col">Title</th>
-            <th scope="col">Author(s)</th>
-            <th scope="col">Year Published</th>
-            <th scope="col">Publisher</th>
-            <th scope="col">Page Count</th>
-            <th scope="col">MSRP</th>
+            <th role=columnheader scope="col">Title</th>
+            <th role=columnheader scope="col">Author(s)</th>
+            <th role=columnheader scope="col">Year Published</th>
+            <th role=columnheader scope="col">Publisher</th>
+            <th role=columnheader scope="col">Page Count</th>
+            <th role=columnheader scope="col">MSRP</th>
           </tr>
         </thead>
         <!-- Books found on Amazon.com -->
@@ -132,5 +132,10 @@
         </div>
       </form>
     </main>
+    <script src="js/tablesort.min.js"></script>
+    <script>
+      // tablesort plugin from
+      new Tablesort(document.getElementById('btable'));
+    </script>
   </body>
 </html>
