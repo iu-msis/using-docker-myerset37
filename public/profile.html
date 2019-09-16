@@ -9,12 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/site.css" rel="stylesheet" >
-    <!-- From Bootstrap -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <title>profile</title>
   </head>
   <body>
@@ -49,19 +43,41 @@
     <main>
       <!-- from W3Schools template -->
       <!-- https://www.w3schools.com/howto/howto_css_profile_card.asp -->
-      <div class="card">
-        <img src="img/Bob_at_Easel.jpg" alt="Bob" style="width:100%">
-        <h1>Bob Ross</h1>
-        <p class="profile_title">Daytona Beach, FL, USA</p>
-        <p>10/29/1942</p>
-        <p><a href="https://en.wikipedia.org/wiki/Bob_Ross#/media/File:Bob_at_Easel.jpg">Image Source</a></p>
-        <a href="#"><i class="fa fa-dribbble"></i></a>
+      <!-- <div class="container">
+        <div class="row">
+          <div id="userApp">
+            <div class="users waitingApp"
+            v-for="user in users">
+              <!-- <img src="img/Bob_at_Easel.jpg" alt="Bob" style="width:100%"> -->
+              <!-- <span class="userName">{{ user.gender }} {{ user.name.last }}</span>
+              <p>{{ users.results[0] }}</p>
+            </div>
+          </div>
+        </div> -->
+        <!-- <p><a href="https://en.wikipedia.org/wiki/Bob_Ross#/media/File:Bob_at_Easel.jpg">Image Source</a></p> -->
+        <!-- <a href="#"><i class="fa fa-dribbble"></i></a>
         <a href="#"><i class="fa fa-twitter"></i></a>
         <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <p><a href="mailto:thebobross@fakeemail.com" id="contact">Email at TheBobRoss@FakeEmail.com</a></p>
-      </div>
-    </main>
-    <footer
+        <a href="#"><i class="fa fa-facebook"></i></a> -->
+        <!-- <p><a href="mailto:thebobross@fakeemail.com" id="contact">Email at TheBobRoss@FakeEmail.com</a></p> -->
+
+        <div id='userApp' class="card">
+          <span><img :src="users.picture.large" alt="profile picture" class="profilePic"></span><br>
+          <link :href="users.picture.large"> <small> <i> Source: Randomuser.me </i> </small>
+          <br></br>
+          <strong>Name: {{users.name.first}} {{users.name.last}}</strong> <span> </span> <br>
+          <strong>Country of Origin: {{users.nat}}</strong> <span> </span> <br>
+          <strong>Birthdate: {{users.dob.date}}</strong> <span> </span> <br>
+          <strong>Age: {{users.dob.age}} </strong> <span> </span> <br>
+          <strong>Email: <a :href="'mailto:'+ users.email">{{users.email}} </a></strong> <span> </span> <br>
+        </div>
+  <!-- From Bootstrap -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/user.app.js"></script>
   </body>
 </html>

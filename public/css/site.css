@@ -99,3 +99,7 @@ th[role=columnheader]:not(.no-sort):hover:after {
 	visibility: visible;
 	opacity: 1;
 }
+
+.profilePic {
+  margin-top: 25px;
+}
