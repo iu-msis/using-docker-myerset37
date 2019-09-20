@@ -20,5 +20,5 @@ var randomApp = new Vue ({
   },
   created(){
     this.fetchUser()
-  }
+  },
 });
